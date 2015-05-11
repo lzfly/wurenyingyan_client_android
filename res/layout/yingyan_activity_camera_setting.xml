@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    android:orientation="vertical"
+    tools:context=".SensorSettingActivity" >
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#888888"
+	        android:textSize="16sp"
+	        android:text="@string/device_name_lab" />
+        	    
+        <Button
+            android:id="@+id/rename_sensor_button"
+            android:layout_width="66dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yingyan_selector_view_camera_background"
+            android:textColor="#FCFCFC"
+            android:textSize="15sp"
+            android:text="@string/modify_lab" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sensor_name"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+    
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#888888"
+	        android:textSize="16sp"
+	        android:text="@string/camera_addr_lab" />
+	    
+        <Button
+            android:id="@+id/camera_addr_button"
+            android:layout_width="66dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yingyan_selector_view_camera_background"
+            android:textColor="#FCFCFC"
+            android:textSize="15sp"
+            android:text="@string/modify_lab" />
+	    	    
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/camera_addr_text"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:text="@string/no_camera_bind_lab" />
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#888888"
+	        android:textSize="16sp"
+	        android:text="@string/camera_port_lab" />
+	    
+        <Button
+            android:id="@+id/camera_port_button"
+            android:layout_width="66dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yingyan_selector_view_camera_background"
+            android:textColor="#FCFCFC"
+            android:textSize="15sp"
+            android:text="@string/modify_lab" />
+	    	    
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/camera_port_text"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:text="@string/no_camera_bind_lab" />
+    
+</LinearLayout>

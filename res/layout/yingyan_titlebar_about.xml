@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title_bar_background" >
+
+    <LinearLayout android:id="@+id/action_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/yingyan_selector_titblebar_button_background"
+        android:orientation="vertical" >
+
+	    <ImageView
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:contentDescription="@string/img_desc"
+	        android:src="@drawable/yingyan_icon_back" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/text_titlebar_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textColor="#F9F9F9"        
+        android:text="@string/app_about_me" />
+    
+</RelativeLayout>

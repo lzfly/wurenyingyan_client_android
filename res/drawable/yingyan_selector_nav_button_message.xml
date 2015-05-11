@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_selected="true">
+        
+        <bitmap android:src="@drawable/yingyan_icon_message_selected" android:antialias="true" />
+        
+    </item>
+    
+    <item>
+        
+        <bitmap android:src="@drawable/yingyan_icon_message_normal" android:antialias="true" />
+        
+    </item>
+
+</selector>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/widget_round_rectange_message_dialog" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent" >
+
+	        <TextView android:id="@+id/message_dialog_caption"
+	            style="@style/message_dialog_caption" 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:text="@string/message_dialog_caption" />
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#666666" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/message_dialog_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+	        <TextView android:id="@+id/message_dialog_content"
+	            style="@style/message_dialog_content"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left|center"
+	            android:lineSpacingMultiplier="1.5"
+	            android:minHeight="100dp"
+	            android:padding="20dp" />
+	        
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#C8C8C8" />
+                
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <Button android:id="@+id/message_dialog_button_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/message_dialog_button_ok"
+                android:background="@drawable/widget_message_dialog_button"
+                android:textColor="#666666"
+        		android:shadowColor="#ffffff"
+        		android:shadowRadius="1.0"
+        		android:shadowDx="1.0"
+        		android:shadowDy="1.0" />
+            
+	        <View
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:background="#C8C8C8" />            
+            
+            <Button android:id="@+id/message_dialog_button_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/message_dialog_button_cancel"
+                android:background="@drawable/widget_message_dialog_button"
+                android:textColor="#888888"
+        		android:shadowColor="#ffffff"
+        		android:shadowRadius="1.0"
+        		android:shadowDx="1.0"
+        		android:shadowDy="1.0" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</FrameLayout>

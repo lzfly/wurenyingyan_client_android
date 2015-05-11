@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.fiveman.yingyan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MessageActivity" >
+
+   	<LinearLayout android:id="@+id/message_receiving_container"
+   	    android:layout_marginBottom="35dp"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_centerInParent="true"
+   	    android:gravity="center"
+   	    android:orientation="vertical" >
+<!--
+   	    <ImageView
+   	        android:id="@+id/message_receiving_image"
+   	        android:layout_marginBottom="2dp"
+   	        android:layout_width="80dp"
+   	        android:layout_height="90dp"
+   	        android:contentDescription="@string/img_desc"
+   	        android:src="@drawable/qly_anim_message_receiving" />
+-->
+   	    <TextView
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:textColor="#666666"
+   	        android:textSize="15sp"
+   	        android:text="@string/message_receiving_hint" />
+   	    
+   	</LinearLayout>
+   	
+    <com.fiveman.yingyan.widgets.PullDownRefreshView
+        android:id="@+id/message_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone" >
+
+	    <com.fiveman.yingyan.widgets.MultiColumnView
+	        android:id="@+id/message_column_views"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        app:maxItemCount="500"
+	        app:columns="1" >
+	        
+	    </com.fiveman.yingyan.widgets.MultiColumnView>
+   	    	    	    
+   	</com.fiveman.yingyan.widgets.PullDownRefreshView>
+    
+</RelativeLayout>

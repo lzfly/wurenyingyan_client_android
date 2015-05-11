@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.fiveman.yingyan"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_title_bar_background"   
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/tice_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="0dp" >
+        
+	     <com.fiveman.yingyan.widgets.MultiColumnView
+		        android:id="@+id/tice_views"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        app:maxItemCount = "99999"
+		        app:columns="2" >	        
+		  </com.fiveman.yingyan.widgets.MultiColumnView>
+		  
+
+     </ScrollView>
+     
+</LinearLayout>
+
+
+
+

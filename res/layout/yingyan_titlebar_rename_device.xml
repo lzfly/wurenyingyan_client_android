@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yingyan_shape_titlebar" >
+
+    <LinearLayout android:id="@+id/action_cancel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/yingyan_selector_titble_button_background"
+        android:orientation="vertical" >
+
+	    <ImageView
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:contentDescription="@string/img_desc"
+	        android:src="@drawable/yingyan_icon_title_close" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/text_titlebar_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textColor="#F9F9F9"        
+        android:text="@string/rename_sensor_name" />
+    
+    <LinearLayout android:id="@+id/action_confirm"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/yingyan_selector_titble_button_background"
+        android:orientation="vertical" >
+
+	    <ImageView
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:contentDescription="@string/img_desc"
+	        android:src="@drawable/yingyan_icon_title_confirm" />
+        	        	        
+    </LinearLayout>
+    
+</RelativeLayout>
